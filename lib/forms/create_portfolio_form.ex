@@ -6,14 +6,15 @@ defmodule Manager.Forms.CreatePortfolioForm do
   import Utils.Rop
 
   embedded_schema do
-    field :user_id
-    field :currency
+    field :user_id, :id
+    field :currency, :string
+    field :name, :string
   end
 
   def changeset(form, params \\ %{}) do
     form
-    |> cast(params, [:user_id, :currency])
-    |> validate_required([:user_id, :currency])
+    |> cast(params, [:user_id, :currency, :name])
+    |> validate_required([:user_id, :currency, :name])
   end
 
   def validate_input(%{portfolio: portfolio} = params) do
