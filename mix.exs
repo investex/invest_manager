@@ -23,9 +23,9 @@ defmodule Manager.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:rop, git: "https://github.com/ryantaylor/rop.git"},
-      {:persistence, git: "https://github.com/investex/persistence.git"},
-      {:utils, git: "https://github.com/investex/utils.git"},
+      {:rop, git: "https://github.com/ryantaylor/rop.git", branch: "master"},
+      {:persistence, git: "https://github.com/investex/persistence.git", branch: "master"},
+      {:utils, git: "https://github.com/investex/utils.git", branch: "master"},
       {:ex_machina, "~> 2.3", only: [:test, :dev]},
       {:faker, "~> 0.13", only: [:test, :dev]}
     ]
