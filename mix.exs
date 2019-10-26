@@ -38,8 +38,8 @@ defmodule Manager.MixProject do
       "lib",
       "test/support",
       "test/factories",
-      "/Users/ryantaylor/Code/invest/persistence/test/support",
-      "/Users/ryantaylor/Code/invest/persistence/test/factories"
+      "deps/persistence/test/support",
+      "deps/persistence/test/factories"
     ]
 
   defp elixirc_paths(_), do: ["lib"]
