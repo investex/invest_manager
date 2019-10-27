@@ -1,4 +1,4 @@
-defmodule Manager.Forms.CreatePortfolioForm do
+defmodule Invest.Manager.Forms.CreatePortfolioForm do
   use Ecto.Schema
   use Rop
 

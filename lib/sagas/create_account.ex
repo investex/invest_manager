@@ -1,10 +1,10 @@
-defmodule Manager.Sagas.CreateAccount do
+defmodule Invest.Manager.Sagas.CreateAccount do
   use Rop
 
   import Utils.Rop
 
-  alias Manager.Forms.CreateAccountForm
-  alias Persistence.{Account, Portfolio, Repo, User}
+  alias Invest.Manager.Forms.CreateAccountForm
+  alias Invest.Persistence.{Account, Portfolio, Repo, User}
 
   def process(%{account: _, current_user: _} = params) do
     params

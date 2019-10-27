@@ -1,4 +1,4 @@
-defmodule Manager.Forms.CreateAccountForm do
+defmodule Invest.Manager.Forms.CreateAccountForm do
   use Ecto.Schema
   use Rop
 

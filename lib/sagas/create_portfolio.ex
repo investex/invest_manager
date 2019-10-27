@@ -1,10 +1,10 @@
-defmodule Manager.Sagas.CreatePortfolio do
+defmodule Invest.Manager.Sagas.CreatePortfolio do
   use Rop
 
   import Utils.Rop
 
-  alias Manager.Forms.CreatePortfolioForm
-  alias Persistence.{Portfolio, Repo}
+  alias Invest.Manager.Forms.CreatePortfolioForm
+  alias Invest.Persistence.{Portfolio, Repo}
 
   def process(%{portfolio: _, current_user: _} = params) do
     params
